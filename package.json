@@ -1,0 +1,34 @@
+{
+  "name": "eb-gulp",
+  "version": "1.0.0",
+  "description": "Gulp for eb digital project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "--"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Killian",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.4.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-px2rem": "^1.0.13",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "imagemin-pngquant": "^6.0.0",
+    "node-sass-glob-importer": "^5.3.2",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.0.0",
+    "sass-glob-importer": "^1.0.1"
+  }
+}

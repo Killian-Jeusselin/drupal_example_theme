@@ -1,0 +1,45 @@
+<?php
+
+use \Drupal\block\Entity\Block;
+
+
+
+/*********************************************
+    PREPROCESS NODE
+*********************************************/
+
+function box_theme_preprocess_page(&$variables){
+    
+    //Load du block de menu principal
+    // $block = Block::load('navigationprincipale');
+    //assignation de la variable pour le template
+    // $variables['nav_principal'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+
+    //Used for selector content type
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        $variables['node'] = $node;
+    }
+}
+
+/*********************************************
+    PREPROCESS PAGE
+*********************************************/
+
+function box_theme_preprocess_node(&$variables){
+    
+    $variables['title'] = $variables['label'];
+    
+    // Exemple Load de block
+    // $block = Block::load('blog_motor_block');
+    // $variables['blog_motor_block'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+
+}
+
+/*********************************************
+    PREPROCESS HTML
+*********************************************/
+
+function box_theme_preprocess_html(&$variables)
+{
+ // Only if needed
+}

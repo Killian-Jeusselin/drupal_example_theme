@@ -1,0 +1,19 @@
+name: box_theme
+type: theme
+description: Notre theme developement
+core: 8.x
+libraries:
+  - box_theme/box_theme
+libraries-override:
+  # system/base: false
+stylesheets-remove:
+  # - '@stable/css/style.css'
+base_theme: stable
+regions:
+  header: Header
+  title: Title
+  navigation: navigation
+  content: Content
+  prefooter: Prefooter
+  footer: Footer
+screenshot: screenshot.jpg

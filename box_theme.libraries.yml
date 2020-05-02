@@ -1,0 +1,12 @@
+box_theme:
+  version: 1.x
+  css:
+    theme:
+      dist/css/main.css: {}
+  js:
+    dist/js/main.min.js: { attributes: { defer: true, async: true } }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/modernizr
