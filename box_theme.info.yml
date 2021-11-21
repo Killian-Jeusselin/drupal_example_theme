@@ -8,7 +8,7 @@ libraries-override:
   # system/base: false
 stylesheets-remove:
   # - '@stable/css/style.css'
-base_theme: stable
+base theme: stable
 regions:
   header: Header
   title: Title
