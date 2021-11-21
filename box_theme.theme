@@ -7,6 +7,19 @@ use \Drupal\block\Entity\Block;
 /*********************************************
     PREPROCESS NODE
 *********************************************/
+function box_theme_preprocess_node(&$variables){
+    
+    $variables['title'] = $variables['label'];
+    
+    // Exemple Load de block
+    // $block = Block::load('blog_motor_block');
+    // $variables['blog_motor_block'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
+
+}
+
+/*********************************************
+    PREPROCESS PAGE
+*********************************************/
 
 function box_theme_preprocess_page(&$variables){
     
@@ -19,20 +32,6 @@ function box_theme_preprocess_page(&$variables){
     if ($node = \Drupal::routeMatch()->getParameter('node')) {
         $variables['node'] = $node;
     }
-}
-
-/*********************************************
-    PREPROCESS PAGE
-*********************************************/
-
-function box_theme_preprocess_node(&$variables){
-    
-    $variables['title'] = $variables['label'];
-    
-    // Exemple Load de block
-    // $block = Block::load('blog_motor_block');
-    // $variables['blog_motor_block'] = \Drupal::entityTypeManager()->getViewBuilder('block')->view($block);
-
 }
 
 /*********************************************
