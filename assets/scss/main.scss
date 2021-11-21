@@ -1,6 +1,34 @@
+/*------------------------------
+
+    HTML
+
+-------------------------------*/
+
+html,
+body {
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /**COMMONS **/
-@import 'commons/*';
+@import "commons/_reset.scss";
+
 /** LAYOUT **/
-@import 'layout/*';
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+
 /** CONTENT **/
-@import 'content/*';
+@import "content/_node.scss";
